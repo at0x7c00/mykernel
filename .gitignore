@@ -1,4 +1,7 @@
 /VirtualBox/
 /Vmware/
 /booktool/
+/Books/
+*.lst
 *.uibak
+*.bin
