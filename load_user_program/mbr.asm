@@ -91,10 +91,10 @@ load_hard_disk:
 	add bx,2
 	loop .read_data;
 
-	pop ax
-	pop bx
-	pop cx
 	pop dx
+	pop cx
+	pop bx
+	pop ax
 
 	ret
 
