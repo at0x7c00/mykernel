@@ -23,6 +23,18 @@ start:
 	mov bx,0    ;bx cursor index
 	mov bp,0    ;bp char index
 	call print
+	
+	;监听键盘输入，显示到屏幕
+.reps:
+      mov ah,0x00
+      int 0x16
+      
+      mov ah,0x0e
+      mov bl,0x07
+      int 0x10
+
+      jmp .reps
+	
 	jmp $
 
 ;bx cursor index
